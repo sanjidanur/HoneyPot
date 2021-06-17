@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding-left:0 ;
+	box-sizing: border-box;
+}
+.container{
+	background-image: url("Images/containerbg.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 800px relative;
+	position: relative;
+	width: 100%;
+	display : flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	height: 600px;
+	font-family: 'Noto Sans JP', sans-serif;
+	box-sizing: border-box;
+	margin-left: 10%;
+	
+}
+
+
+
+.header{
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	font-size: 9px;
+	color: #fff;
+	
+
+}
+.name{
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+	
+
+}
+.name>img{
+	height: 30px;
+
+	
+}
+.menu{
+	width: 60%;	
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px;
+}
+
+.menu>ul{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
+	align-items: center;
+	
+	
+}
+a{
+	color: #5e5c5c;
+	background-color: transparent;
+	font-weight: bolder;
+	text-decoration: none;
+	font-size: 9px;
+	align-items: center;
+	
+}
+li{
+	list-style: none;
+}
+
+
+.loginbtn{
+	background-color: transparent;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	color: #5e5c5c;
+	font-size: 9px;
+	font-weight: bolder;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+
+.signupbtn{
+	background-color: #3685d6;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	color: #fff;
+	font-size: 9px;
+	font-weight: bolder;
+	text-align: center;
+	cursor: pointer;
+}
+.menu-line{
+
+	width: 20px;
+	height: 3px;
+	background-color: #5e5c5c;
+	margin-bottom: 3px;
+	
+}
+.menuline{
+	display:none;
+
+}
+
+.language{
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+	
+	
+
+}
+
+.language>a{
+	padding: 5px;
+	border-right: 1px solid #e2e8f0;
+
+
+}
+
+
+/*.container > .headerbody:nth-of-type(2) {
+  justify-content: center;
+
+  } */
+
+
+  p{
+  	font-family: 'Noto Sans JP', sans-serif;
+
+  }
+  .headerbody{
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+  	margin-top: 80px;
+  	
+  }
+
+  .findmebtn{
+  	background-color: #fff2c6;
+  	color: #cea000;
+  	border: none;
+  	border-radius: 4px;
+  	padding: 8px 16px;
+  	margin: 10px;
+  	font-size: 9px;
+  	font-weight: bolder;
+  	text-align: center;
+  	cursor: pointer;
+
+  }
+
+
+
+  .hiringbtn{
+  	background-color: transparent;
+  	color: #999;
+  	text-decoration: underline;
+  	border: none;
+  	font-size: 9px;
+  	padding: 8px 16px;
+  	font-weight: bolder;
+  	text-align: center;
+  	cursor: pointer;
+
+  }
+
+  .introend{
+  	width: 15%;
+  	display: flex;
+  	flex-direction: row ;
+  	justify-content: center;
+  	align-items: center;
+
+  }
+  h1{
+  	padding: 8px 16px;
+  	font-size: 35px;
+  	
+  }
+  p{
+  	padding: 8px 16px;
+  } 
+
+
+  @media all and (max-width :480px){
+  	
+
+
+  	.container{
+  		
+  		height: 400px;
+  		width: 100%;
+  		
+
+  	}
+
+  	.menuline{
+
+  		display: block;
+  		position: absolute;
+  		left: 10px;
+  		top: 20px;
+  	}
+  	.menu-line{
+
+  		width: 20px;
+  		height: 3px;
+  		background-color: #5e5c5c;
+  		margin-bottom: 4px;
+
+
+  	}
+
+  	.header{
+  		flex-direction: column;
+  		align-content: space-evenly;
+  		background-color: white;
+
+
+
+
+  	}
+  	.menu{
+
+  		justify-content: space-evenly;
+  		position: absolute;
+  		top: 15px;
+
+
+  	}
+
+  	.menu>ul{
+
+  		display: flex;
+  		flex-direction: column;
+  		align-content: flex-end;
+  		display: none;
+
+  	}
+
+  	.name>img{
+  		height: 30px;
+  		position: absolute;
+  		left: 70px;
+  		top: 15px;
+  	}
+  	.container{
+  		background-position: right;
+  		background-size: 350px;
+
+  	}
+
+  	.language{
+  		position: absolute;
+  		right: 10px;
+  		top: 20px;
+
+
+
+  	}
+
+
+  	.headerbody{
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+  	margin-top: 210px;
+  	padding: 30px 30px;
+   }
+
+
+    .introend{
+  	  
+  	  display: flex;
+  	  flex-direction: row ;
+  	  justify-content: space-between;
+  	  align-items: center;
+
+
+     }
+
+
+
+  }
+
+
+
+
